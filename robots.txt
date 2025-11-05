@@ -1,0 +1,23 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /config/
+Disallow: /backup/
+Disallow: /.env
+Disallow: /.env.backup
+Disallow: /private/
+Disallow: /internal/
+Disallow: /dev/
+
+# Sensitive files
+Disallow: *.env
+Disallow: *.backup
+Disallow: *.sql
+Disallow: *.log
+
+# Allow access to public pages
+Allow: /index.html
+Allow: /about.html
+Allow: /services.html
+Allow: /contact.html
+
+Sitemap: https://ctf-company.com/sitemap.xml
